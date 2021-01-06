@@ -1,0 +1,14 @@
+Porównywany język: Dart
+Środowisko: Linux 5.3.0-46-generic x86_64
+Wersja Javy: javac 11.0.6
+Wersja Dart: Dart VM version: 2.7.2
+
+Programy tworzą tablicę o rozmiarze 50000 elementów, wypełniają ją liczbami
+w porządku malejącym i sortują te tablice w porządku rosnącym za pomocą
+algorytmu sortowania bąbelkowego.
+
+Pomiar czasu: polecenie 'time' w konsoli.
+
+Czas działania Javy: 3082ms
+Czas działania Javy z flagami -Xint -Xprof: 46589ms
+Czas działania Dart: 2664ms
