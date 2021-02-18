@@ -1,0 +1,17 @@
+encstrset_new()
+encstrset_new: set #0 created
+encstrset_insert(0, "Frodo Baggins", NULL)
+encstrset_insert: set #0, cypher "46 72 6F 64 6F 20 42 61 67 67 69 6E 73" inserted
+encstrset_insert(0, "Frodo Baggins", "the ring")
+encstrset_insert: set #0, cypher "32 1A 0A 44 1D 49 2C 06 13 0F 0C 4E 01" inserted
+encstrset_insert(0, "Frodo	Baggins", NULL)
+encstrset_insert: set #0, cypher "46 72 6F 64 6F 09 42 61 67 67 69 6E 73" inserted
+encstrset_insert(0, "Frodo	Baggins", "the ring")
+encstrset_insert: set #0, cypher "32 1A 0A 44 1D 60 2C 06 13 0F 0C 4E 01" inserted
+encstrset_insert(0, "Frodo
+Baggins", "thering")
+encstrset_insert: set #0, cypher "32 1A 0A 6C 1D 63 2C 06 13 0F 0C 66 01" inserted
+encstrset_insert(0, "FrodoBaggins", "thering")
+encstrset_insert: set #0, cypher "32 1A 0A 63 1D 16 2C 06 13 0F 0C 69 01" inserted
+encstrset_delete(0)
+encstrset_delete: set #0 deleted

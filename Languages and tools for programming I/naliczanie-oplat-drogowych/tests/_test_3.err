@@ -1,0 +1,39 @@
+Error in line 1: A A1 1,0
+Error in line 2: AB A1 1,0
+Error in line 3: ABCDEFGHIJKL A1 1,0
+Error in line 4: ABCDEFGHIJKLMNOPQRSTUWXYZ A1 1,0
+Error in line 5: A-C A1 1,0
+Error in line 6: @BC A1 1,0
+Error in line 8: ABC A 1,0
+Error in line 9: ABC S 1,0
+Error in line 10: ABC B1 1,0
+Error in line 11: ABC A0 1,0
+Error in line 12: ABC S0 1,0
+Error in line 13: ABC A01 1,0
+Error in line 14: ABC S01 1,0
+Error in line 15: ABC A1000 1,0
+Error in line 16: ABC S1000 1,0
+Error in line 17: ABC A2147483647 1,0
+Error in line 18: ABC A2147483648 1,0
+Error in line 19: ABC A4294967295 1,0
+Error in line 20: ABC A4294967296 1,0
+Error in line 21: ABC S2147483647 1,0
+Error in line 22: ABC S2147483648 1,0
+Error in line 23: ABC S4294967295 1,0
+Error in line 24: ABC S4294967296 1,0
+Error in line 25: ABC A123456789123456789123456789123456789 1,0
+Error in line 26: ABC S123456789123456789123456789123456789 1,0
+Error in line 28: 123 A999 1
+Error in line 29: 123 A998 ,1
+Error in line 30: 123 A997 1.0
+Error in line 31: 123 A997 -1,1
+Error in line 32: 123 A997 -0,0
+Error in line 33: 123 A997 +1,0
+Error in line 34: 123 A997 12345678912345678912345678912345678,9
+Error in line 36: ?EE
+Error in line 37: ?123456789012
+Error in line 38: ?ZZZZZZZZZZZZ
+Error in line 39: ?---
+Error in line 41: ?A
+Error in line 43: W123 A1 1,0 .
+Error in line 44: 3333 W123 A1 1,0

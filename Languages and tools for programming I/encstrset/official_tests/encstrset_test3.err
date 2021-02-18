@@ -1,0 +1,71 @@
+encstrset_new()
+encstrset_new: set #0 created
+encstrset_new()
+encstrset_new: set #1 created
+encstrset_new()
+encstrset_new: set #2 created
+encstrset_insert(0, "7777777", "72wW4u")
+encstrset_insert: set #0, cypher "00 05 40 60 03 42 00" inserted
+encstrset_insert(0, "eset1", "eset1")
+encstrset_insert: set #0, cypher "00 00 00 00 00" inserted
+encstrset_insert(1, "72wW4u", "7777777")
+encstrset_insert: set #1, cypher "00 05 40 60 03 42" inserted
+encstrset_insert(1, "eset2", "eset2")
+encstrset_insert: set #1, cypher "00 00 00 00 00" inserted
+encstrset_insert(1, "eset2", "eset2")
+encstrset_insert: set #1, cypher "00 00 00 00 00" was already present
+encstrset_copy(1, 0)
+encstrset_copy: copied cypher "00 00 00 00 00" was already present in set #0
+encstrset_copy: cypher "00 05 40 60 03 42" copied from set #1 to set #0
+encstrset_size(0)
+encstrset_size: set #0 contains 3 element(s)
+encstrset_remove(1, "72wW4u", "7")
+encstrset_remove: set #1, cypher "00 05 40 60 03 42" removed
+encstrset_remove(1, "eset2", "eset2")
+encstrset_remove: set #1, cypher "00 00 00 00 00" removed
+encstrset_test(1, "eset2", "eset2")
+encstrset_test: set #1, cypher "00 00 00 00 00" is not present
+encstrset_delete(1)
+encstrset_delete: set #1 deleted
+encstrset_delete(2)
+encstrset_delete: set #2 deleted
+encstrset_delete(2)
+encstrset_delete: set #2 does not exist
+encstrset_copy(2, 1)
+encstrset_copy: set #2 does not exist
+encstrset_delete(1)
+encstrset_delete: set #1 does not exist
+encstrset_test(2, "NULL", NULL)
+encstrset_test: set #2 does not exist
+encstrset_test(2, NULL, "NULL")
+encstrset_test: invalid value (NULL)
+encstrset_test(2, NULL, NULL)
+encstrset_test: invalid value (NULL)
+encstrset_insert(0, "", "abc")
+encstrset_insert: set #0, cypher "" inserted
+encstrset_insert(0, "abc", "")
+encstrset_insert: set #0, cypher "61 62 63" inserted
+encstrset_test(0, "", "abc")
+encstrset_test: set #0, cypher "" is present
+encstrset_test(0, "abc", "")
+encstrset_test: set #0, cypher "61 62 63" is present
+encstrset_remove(0, "", "abc")
+encstrset_remove: set #0, cypher "" removed
+encstrset_remove(0, "abc", "")
+encstrset_remove: set #0, cypher "61 62 63" removed
+encstrset_copy(0, 1)
+encstrset_copy: set #1 does not exist
+encstrset_copy(1, 0)
+encstrset_copy: set #1 does not exist
+encstrset_delete(0)
+encstrset_delete: set #0 deleted
+encstrset_insert(0, "a", "b")
+encstrset_insert: set #0 does not exist
+encstrset_test(0, "a", "b")
+encstrset_test: set #0 does not exist
+encstrset_remove(0, "a", "b")
+encstrset_remove: set #0 does not exist
+encstrset_copy(0, 1)
+encstrset_copy: set #0 does not exist
+encstrset_test(0, NULL, "")
+encstrset_test: invalid value (NULL)
