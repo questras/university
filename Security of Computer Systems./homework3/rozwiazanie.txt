@@ -1,0 +1,49 @@
+skrót BTF załączonego pliku: 89c6e762
+
+
+Procedura uzyskiwania sumy dla dowolnego programu:
+* Otworzyć program `crackme2021` przy pomocy `gdb` z nakładką `PEDA`:
+```
+gdb --args crackme2021 <program> 123
+```
+gdzie <program> to program, dla którego szukany jest skrót.
+* wpisać komendę `start`
+* wpisać komendę `info file`. Wynik będzie wyglądał mniej więcej tak:
+```
+...
+	0x00005555554005f0 - 0x00005555554006e0 is .rela.dyn
+	0x00005555554006e0 - 0x0000555555400800 is .rela.plt
+	0x0000555555400800 - 0x0000555555400817 is .init
+	0x0000555555400820 - 0x00005555554008f0 is .plt
+	0x00005555554008f0 - 0x00005555554008f8 is .plt.got
+	0x0000555555400900 - 0x0000555555400f2f is .text
+	0x0000555555400f30 - 0x0000555555400f39 is .fini
+	0x0000555555400f40 - 0x0000555555401093 is .rodata
+...
+```
+* skopowiać adresy dla sekcji `.text` i użyć z komendą `disas`, np.:
+```
+disas 0x0000555555400900,0x0000555555400f2f
+```
+* Wynikiem będzie kod programu. Należy znaleźć i skopiować adres linii zawierającej 
+```
+cmp    edx,eax
+```
+(będzie tylko jedna taka linia). Można to szybko zrobić kopiując zawartość kodu do pliku i tam wyszukać tę linię. Jest to operacja porównująca napis otrzymany od użytkownika (eax) z oczekiwanym skrótem (edx).
+* ustawić breakpoint w gdb na adres z punktu powyżej, np.:
+```
+b *0x0000555555400e42
+```
+* Usunąć breakpoint utworzony komendą `start` wpisując:
+```
+del 1
+```
+* Uruchomić program komendą `run`
+* `gdb` zatrzyma się na linii, na której ustawiliśmy breakpoint. Oczekiwany skrót pliku jest w rejestrze edx:
+```
+print $edx
+```
+* Wynik jest postaci `$1 = 0x1d36a3b1`. Skrótem pliku jest część po `0x`, w tym przykładowym przypadku jest to `1d36a3b1`.
+
+
+Opracowanie powyższej procedury zajęło mi około 3 godziny. 

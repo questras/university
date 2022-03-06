@@ -1,0 +1,50 @@
+Dec  8 13:39:43 serwer sshd[677]: Server listening on 0.0.0.0 port 22.
+Dec  8 13:39:43 serwer sshd[677]: Server listening on :: port 22.
+Dec  8 13:39:57 serwer login[403]: pam_unix(login:session): session opened for user root(uid=0) by LOGIN(uid=0)
+Dec  8 13:39:57 serwer systemd-logind[276]: New session 1 of user root.
+Dec  8 13:39:57 serwer systemd: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
+Dec  8 13:39:57 serwer login[831]: ROOT LOGIN  on '/dev/tty1'
+Dec  8 13:42:29 serwer systemd-logind[284]: New seat seat0.
+Dec  8 13:42:29 serwer systemd-logind[284]: Watching system buttons on /dev/input/event4 (Power Button)
+Dec  8 13:42:29 serwer systemd-logind[284]: Watching system buttons on /dev/input/event5 (Sleep Button)
+Dec  8 13:42:29 serwer systemd-logind[284]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Dec  8 13:42:29 serwer sshd[679]: Server listening on 0.0.0.0 port 22.
+Dec  8 13:42:29 serwer sshd[679]: Server listening on :: port 22.
+Dec  8 13:42:35 serwer login[401]: pam_unix(login:session): session opened for user root(uid=0) by LOGIN(uid=0)
+Dec  8 13:42:35 serwer systemd-logind[284]: New session 1 of user root.
+Dec  8 13:42:35 serwer systemd: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
+Dec  8 13:42:35 serwer login[820]: ROOT LOGIN  on '/dev/tty1'
+Dec  8 13:46:06 serwer systemd-logind[351]: New seat seat0.
+Dec  8 13:46:06 serwer systemd-logind[351]: Watching system buttons on /dev/input/event4 (Power Button)
+Dec  8 13:46:06 serwer systemd-logind[351]: Watching system buttons on /dev/input/event6 (Sleep Button)
+Dec  8 13:46:06 serwer systemd-logind[351]: Watching system buttons on /dev/input/event0 (AT Translated Set 2 keyboard)
+Dec  8 13:47:08 serwer sshd[767]: Server listening on 0.0.0.0 port 22.
+Dec  8 13:47:08 serwer sshd[767]: Server listening on :: port 22.
+Dec  8 13:47:15 serwer login[505]: pam_unix(login:session): session opened for user root(uid=0) by LOGIN(uid=0)
+Dec  8 13:47:15 serwer systemd-logind[351]: New session 1 of user root.
+Dec  8 13:47:15 serwer systemd: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
+Dec  8 13:47:16 serwer login[838]: ROOT LOGIN  on '/dev/tty1'
+Dec  8 13:51:26 serwer sshd[1080]: Accepted password for root from 172.16.0.2 port 45048 ssh2
+Dec  8 13:51:26 serwer sshd[1080]: pam_unix(sshd:session): session opened for user root(uid=0) by (uid=0)
+Dec  8 13:51:26 serwer systemd-logind[351]: New session 3 of user root.
+Dec  8 13:52:20 serwer sshd[1080]: Received disconnect from 172.16.0.2 port 45048:11: disconnected by user
+Dec  8 13:52:20 serwer sshd[1080]: Disconnected from user root 172.16.0.2 port 45048
+Dec  8 13:52:20 serwer sshd[1080]: pam_unix(sshd:session): session closed for user root
+Dec  8 13:52:20 serwer systemd-logind[351]: Session 3 logged out. Waiting for processes to exit.
+Dec  8 13:52:20 serwer systemd-logind[351]: Removed session 3.
+Dec  8 13:56:16 serwer groupadd[1326]: group added to /etc/group: name=mysql, GID=116
+Dec  8 13:56:17 serwer groupadd[1326]: group added to /etc/gshadow: name=mysql
+Dec  8 13:56:17 serwer groupadd[1326]: new group: name=mysql, GID=116
+Dec  8 13:56:17 serwer useradd[1334]: new user: name=mysql, UID=109, GID=116, home=/nonexistent, shell=/bin/false, from=none
+Dec  8 13:56:18 serwer chage[1341]: changed password expiry for mysql
+Dec  8 13:56:18 serwer chfn[1345]: changed user 'mysql' information
+Dec  8 15:25:04 serwer phpMyAdmin[3933]: user denied: admin (mysql-denied) from 172.16.0.2
+Dec  8 15:25:20 serwer phpMyAdmin[3929]: user denied: guest (mysql-denied) from 172.16.0.2
+Dec  8 15:25:34 serwer phpMyAdmin[3936]: user denied: administrator (mysql-denied) from 172.16.0.2
+Dec  8 15:25:41 serwer phpMyAdmin[3931]: user denied: root (empty-denied) from 172.16.0.2
+Dec  8 15:25:52 serwer phpMyAdmin[4137]: user denied: root (mysql-denied) from 172.16.0.2
+Dec  8 15:26:01 serwer phpMyAdmin[3932]: user denied: root (mysql-denied) from 172.16.0.2
+Dec  8 15:26:05 serwer phpMyAdmin[3932]: user denied: root (mysql-denied) from 172.16.0.2
+Dec  8 15:26:10 serwer phpMyAdmin[3932]: user denied: root (mysql-denied) from 172.16.0.2
+Dec  8 15:26:17 serwer phpMyAdmin[3930]: user denied: root (mysql-denied) from 172.16.0.2
+Dec  8 15:26:21 serwer phpMyAdmin[3930]: user denied: root (mysql-denied) from 172.16.0.2

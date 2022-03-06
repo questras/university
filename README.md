@@ -20,3 +20,4 @@ Tasks and Projects from my bachelor's at University of Warsaw 2019-Now
     * Smaller and bigger projects written in **Java**
 * Probability Theory and Statistics
     * Implementations of problems in **python** using **numpy**, **matplotlib**.
+* Security of Computer Systems
