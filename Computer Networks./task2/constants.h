@@ -1,0 +1,10 @@
+#ifndef TASK1_CONSTANTS_H
+#define TASK1_CONSTANTS_H
+
+#define DEFAULT_PORT 8080
+#define BUFFER_SIZE 4096
+#define QUEUE_LENGTH 5
+
+#define CRLF "\r\n"
+
+#endif //TASK1_CONSTANTS_H

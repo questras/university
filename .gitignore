@@ -460,3 +460,4 @@ gradle-app.setting
 *.iml
 
 !Security of Computer Systems./homework2/*.log
+!Computer Networks./task2/Makefile
